@@ -1,4 +1,4 @@
-TARGET := cards
+TARGET := poker
 CODEDIRS := . ./lib
 INCDIRS := ./lib
 
@@ -10,7 +10,7 @@ CC := gcc
 OPT := -O0
 STD := c99
 
-DEPFLAGS := -MP -MD
+DEPFLAGS := -MP -MMD
 INCFLAGS := $(addprefix -I,$(INCDIRS))
 CFLAGS := -Wall -Wextra -g -std=$(STD) $(INCFLAGS) $(OPT) $(DEPFLAGS)
 

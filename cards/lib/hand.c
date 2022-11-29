@@ -1,7 +1,7 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
-#include "poker.h"
+#include "hand.h"
 
 void sort_hand(hand_t h) {
   qsort(h, 5, sizeof(card_t), (int (*)(const void*, const void*))cmp_cards);

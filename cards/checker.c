@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#include "poker.h"
+#include "hand.h"
 
 // clang-format off
 hand_t hands[] = {
