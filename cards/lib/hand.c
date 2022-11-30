@@ -9,7 +9,7 @@ void sort_hand(hand_t h) {
 
 bool is_straight_flush(hand_t h) {
   return is_flush(h) && is_straight(h);
-};
+}
 
 bool is_four_of_a_kind(hand_t h) {
   // either a, b, b, b, b
@@ -24,11 +24,11 @@ bool is_four_of_a_kind(hand_t h) {
   }
 
   return begin->value == end->value;
-};
+}
 
 bool is_full_house(hand_t h) {
   return is_three_of_a_kind(h) && is_pair(h);
-};
+}
 
 bool is_flush(hand_t h) {
   color_t c = h[0].color;
@@ -38,7 +38,7 @@ bool is_flush(hand_t h) {
     }
   }
   return true;
-};
+}
 
 bool is_straight(hand_t h) {
   sort_hand(h);
@@ -75,7 +75,7 @@ bool is_three_of_a_kind(hand_t h) {
   }
 
   return false;
-};
+}
 
 bool is_two_pairs(hand_t h) {
   if (is_three_of_a_kind(h)) {
